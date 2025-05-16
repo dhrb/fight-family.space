@@ -1,0 +1,156 @@
+.homeWrapper {
+  margin: 77px 0 0 0;
+  width: 100%;
+}
+.homeHeroWrapper {
+  position: relative;
+}
+.heroBgImg {
+  width: 100%;
+}
+.heroContactBtn {
+  position: absolute;
+  left: 40%;
+  font-size: 18px;
+  top: 43%;
+  width: 30%;
+  min-width: 180px;
+  height: 50px;
+  border: none;
+  background-color: #e33d4e;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.heroContactBtn:hover {
+  background-color: #e33d4e;
+  cursor: pointer;
+  border: 0.4px solid black;
+}
+.heroTitle {
+  position: absolute;
+  top: 85%;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  cursor: default;
+}
+.mainInfoWrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0f111c;
+}
+.mainInfoItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+  width: 100%;
+}
+.mainInfoTitle {
+  color: #ffffff;
+}
+.mainInfoSubtitle {
+  color: #e33d4e;
+  z-index: 1;
+  cursor: default;
+}
+.mainInfoImg {
+  width: 150px;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.1;
+}
+.homeDisciplinesWrapper {
+  color: #ffffff;
+}
+.homeDisciplinesTitle {
+  text-align: center;
+  margin: 35px 0 15px;
+}
+.disciplinesCards {
+  display: flex;
+  justify-content: space-around;
+}
+.disciplineCardsItem {
+  position: relative;
+  background-color: #121729;
+  width: 200px;
+}
+.disciplinesCardsItemImg {
+  width: 100%;
+}
+.disciplineCardsCalendarLink {
+}
+.calendarLinkImg {
+  width: 60px;
+
+  position: absolute;
+  left: 36%;
+  top: 50%;
+  background-color: #121729;
+  border-radius: 30px;
+  padding: 5px;
+}
+.calendarLinkImg:hover {
+  cursor: pointer;
+  background-color: #ffffffc0;
+}
+.disciplinesCardsTitle {
+  padding: 15px 0 0 0;
+}
+.homeAboutUsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #ffffff;
+}
+.homeAboutUsSide {
+  margin: 0 35px 0 0;
+}
+.homeAboutUsSideImg {
+  max-width: 400px;
+}
+.homeAboutUsMain {
+}
+.homeAboutUsMainTitle {
+}
+.homeAboutUsMainSubtitle {
+}
+.homeAboutUsMainBenefits {
+}
+.homeAboutUsList {
+}
+.homeAboutUsListItem {
+}
+.homeAboutUsTrainer {
+}
+.homeAboutUsTrainerTitle {
+}
+.homeBlogWrapper {
+  color: #ffffff;
+}
+.homeBlogCards {
+  display: flex;
+  justify-content: space-around;
+}
+.homeBlogCardItem {
+  width: 220px;
+}
+.homeBlogCardImg {
+}
+.homeBlogCardDate {
+}
+.homeBlogCardTitle {
+}
+.homeBlogCardSubtitle {
+}
+.homeContactFormWrapper {
+}
+.homeContactFormInput {
+}
+.homeContactFormBtn {
+}

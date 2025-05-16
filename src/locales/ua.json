@@ -1,0 +1,13 @@
+{
+    "navbar" : {
+      "navbarHome": "Головна",
+      "navbarAboutUs": "Про нас",
+      "navbarSchedule": "Розклад",
+      "navbarGallery": "Галерея",
+      "navbarContacts": "Контакти"
+    },
+
+    "home" : {
+
+    }
+}

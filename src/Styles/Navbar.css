@@ -1,0 +1,110 @@
+/* Navbar.css */
+
+:root {
+  --navbar-bg: #0b0c15;
+  --navbar-link-color: white;
+  --navbar-link-hover: #e84242;
+  --navbar-z-index: 1000;
+}
+
+.navbarWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--navbar-bg);
+  z-index: var(--navbar-z-index);
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarTop {
+  width: 33%;
+}
+
+.navbarTitle {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbarBurger {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.navbarBurger img {
+  z-index: 1000;
+  width: 30px;
+  height: 30px;
+}
+
+/* Mobile Menu */
+.navbarLinks {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background: var(--navbar-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  transition: left 0.3s ease-in-out;
+  z-index: calc(var(--navbar-z-index) - 1);
+}
+
+.navbarLinks.open {
+  left: 0;
+}
+
+.navbarLinkItem {
+  color: var(--navbar-link-color);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbarLinkItem:hover {
+  color: var(--navbar-link-hover);
+}
+
+.navbarLinkItem.active {
+  color: var(--navbar-link-hover);
+  font-weight: bold;
+}
+.navbarLangIcon {
+  width: 45px;
+}
+
+/* Desktop styles */
+@media screen and (min-width: 768px) {
+  .navbarBurger {
+    display: none;
+  }
+
+  .navbarLinks {
+    width: 100%;
+    position: static;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+    background: none;
+  }
+
+  .navbarLinkItem {
+    font-size: 1rem;
+  }
+}

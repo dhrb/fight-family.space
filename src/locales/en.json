@@ -1,0 +1,13 @@
+{
+    "navbar" : {
+      "navbarHome": "Home",
+      "navbarAboutUs": "About Us",
+      "navbarSchedule": "Schedule",
+      "navbarGallery": "Gallery",
+      "navbarContacts": "Contacts"
+    },
+
+    "home" : {
+
+    }
+}
