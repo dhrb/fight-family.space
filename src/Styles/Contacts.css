@@ -1,0 +1,12 @@
+.contactsWrapper {
+  margin-top: 100px;
+  color: #fff;
+}
+.contactsTitle {
+  text-align: center;
+  margin: 0 0 50px;
+}
+.contactsContainer {
+  display: flex;
+  justify-content: space-around;
+}

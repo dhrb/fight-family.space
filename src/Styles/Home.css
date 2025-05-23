@@ -102,19 +102,27 @@
   padding: 15px 0 0 0;
 }
 .homeAboutUsWrapper {
+  margin: 55px 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   color: #ffffff;
+  justify-content: center;
 }
 .homeAboutUsSide {
-  margin: 0 35px 0 0;
+  max-width: 750px;
 }
 .homeAboutUsSideImg {
-  max-width: 400px;
+  width: 100%;
+  height: 650px;
+  border-radius: 5px;
 }
 .homeAboutUsMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 0 100px;
+  margin: 0 0 0 50px;
+}
+.homeAboutUsMainInfo {
 }
 .homeAboutUsMainTitle {
 }
@@ -123,34 +131,43 @@
 .homeAboutUsMainBenefits {
 }
 .homeAboutUsList {
+  list-style: circle;
 }
 .homeAboutUsListItem {
 }
-.homeAboutUsTrainer {
+.homeAboutTrainer {
+  font-size: 24px;
 }
 .homeAboutUsTrainerTitle {
+  font-size: 14px;
+  color: #e33d4e;
 }
+
 .homeBlogWrapper {
   color: #ffffff;
+}
+.homeBlogTitle {
+  text-align: center;
+  margin: 0 0 25px;
 }
 .homeBlogCards {
   display: flex;
   justify-content: space-around;
 }
 .homeBlogCardItem {
-  width: 220px;
+  width: 300px;
 }
 .homeBlogCardImg {
+  width: 300px;
+  height: 250px;
 }
 .homeBlogCardDate {
+  color: #e33d4e;
+  font-size: 14px;
+}
+.homeBlogCardText {
 }
 .homeBlogCardTitle {
 }
 .homeBlogCardSubtitle {
-}
-.homeContactFormWrapper {
-}
-.homeContactFormInput {
-}
-.homeContactFormBtn {
 }

@@ -1,0 +1,57 @@
+/* Full form styles */
+.fullformWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fullformContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Short form styles */
+
+.shortFormWrapper {
+  margin: 20px 0 0;
+  padding: 25px 0;
+  background-color: rgb(1, 17, 110);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.shortFormTitle {
+  color: #fff;
+  font-size: 40px;
+  margin: 0 0 25px;
+}
+.homeContactFormInput:nth-child(2) {
+  margin: 0 15px;
+}
+.homeContactFormInput::placeholder {
+  color: rgba(255, 0, 0, 0.312);
+}
+.homeContactFormInput {
+  min-width: 250px;
+  min-height: 40px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.homeContactFormInput:hover {
+  color: #e33d4e;
+  cursor: pointer;
+}
+.homeContactFormBtn {
+  min-width: 70px;
+  min-height: 40px;
+  border: none;
+  border-radius: 5px;
+}
+.homeContactFormBtn:hover {
+  cursor: pointer;
+  color: red;
+  background-color: #001aad;
+  border: 2px solid #fff;
+}

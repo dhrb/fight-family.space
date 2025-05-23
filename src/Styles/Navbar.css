@@ -86,6 +86,7 @@
 }
 .navbarLangIcon {
   width: 45px;
+  z-index: 1000;
 }
 
 /* Desktop styles */

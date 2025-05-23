@@ -1,6 +1,9 @@
 import { useLanguage } from "../context/LanguageContext";
 import "../Styles/Home.css";
 
+import ShortForm from "../Components/ShortForm";
+import FullForm from "../Components/FullForm";
+
 import heroBgImg from "./../assets/heroBgImg.jpg";
 import disciplineCards1 from "./../assets/heroBgImg.jpg";
 import calendarLinkImg from "./../assets/calendarIcon.png";
@@ -8,6 +11,9 @@ import chronometerImg from "./../assets/chronometerImg.png";
 import contactImg from "./../assets/contactImg.png";
 import placeholderImg from "./../assets/placeholderImg.png";
 import mcgregorAboutUs from "./../assets/mcgregorAboutUs.jpg";
+import arrow from "../assets/arrow.png";
+//must parsed anywhere to page
+import blogImg from "../assets/mcgregorAboutUs.jpg";
 
 const Home = () => {
   const { translate } = useLanguage();
@@ -57,6 +63,7 @@ const Home = () => {
               disciplinesCards subtitle graphic
             </p>
           </div>
+
           <div className="disciplineCardsItem">
             <img
               src={disciplineCards1}
@@ -89,28 +96,37 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <ShortForm />
+
       <div className="homeAboutUsWrapper">
         <div className="homeAboutUsSide">
           <img src={mcgregorAboutUs} alt="" className="homeAboutUsSideImg" />
         </div>
         <div className="homeAboutUsMain">
-          <h1 className="homeAboutUsMainTitle">About us title</h1>
-          <p className="homeAboutUsMainSubtitle">About us subtitle</p>
-          <p className="homeAboutUsMainBenefits">About us Benefits</p>
-          <li className="homeAboutUsList">
-            <li className="homeAboutUsListItem">ММА</li>
-            <li className="homeAboutUsListItem">сила</li>
-            <li className="homeAboutUsListItem">Мощь</li>
-            <li className="homeAboutUsListItem">дух</li>
-          </li>
-          <h3 className="homeAboutUsTrainer">Жека Бабчук</h3>
-          <p className="homeAboutUsTrainerTitle">Тренер/Засновник</p>
+          <div className="homeAboutUsMainInfo">
+            <h1 className="homeAboutUsMainTitle">About us title</h1>
+            <p className="homeAboutUsMainSubtitle">About us subtitle</p>
+            <div className="homeAboutUsMainBenefits">
+              <p className="homeAboutUsMainBenefitsTitle">About us Benefits</p>
+              <ul className="homeAboutUsList">
+                <li className="homeAboutUsListItem">ММА</li>
+                <li className="homeAboutUsListItem">сила</li>
+                <li className="homeAboutUsListItem">Мощь</li>
+                <li className="homeAboutUsListItem">дух</li>
+              </ul>
+            </div>
+          </div>
+          <div className="homeAboutUsMainCoach">
+            <h3 className="homeAboutTrainer">Жека Бабчук</h3>
+            <p className="homeAboutUsTrainerTitle">Тренер/Засновник</p>
+          </div>
         </div>
       </div>
       <div className="homeBlogWrapper">
+        <h1 className="homeBlogTitle">Our Blog</h1>
         <div className="homeBlogCards">
           <div className="homeBlogCardItem">
-            <img src="" alt="" className="homeBlogCardImg" />
+            <img src={blogImg} alt="" className="homeBlogCardImg" />
             <p className="homeBlogCardDate">25/04/2025</p>
             <h3 className="homeBlogCardTitle">
               Почесне 1 місце в українських змаганнях
@@ -121,18 +137,20 @@ const Home = () => {
             </p>
           </div>
           <div className="homeBlogCardItem">
-            <img src="" alt="" className="homeBlogCardImg" />
+            <img src={blogImg} alt="" className="homeBlogCardImg" />
             <p className="homeBlogCardDate">25/04/2025</p>
-            <h3 className="homeBlogCardTitle">
-              Почесне 1 місце в українських змаганнях
-            </h3>
-            <p className="homeBlogCardSubtitle">
-              лорем іпсум долор сіт амет бла бла бла бла бла бла бла бла бла бла
-              бла бла бла бла бла бла бла бла бла бла
-            </p>
+            <div className="homeBlogCardText">
+              <h3 className="homeBlogCardTitle">
+                Почесне 1 місце в українських змаганнях
+              </h3>
+              <p className="homeBlogCardSubtitle">
+                лорем іпсум долор сіт амет бла бла бла бла бла бла бла бла бла
+                бла бла бла бла бла бла бла бла бла бла бла
+              </p>
+            </div>
           </div>
           <div className="homeBlogCardItem">
-            <img src="" alt="" className="homeBlogCardImg" />
+            <img src={blogImg} alt="" className="homeBlogCardImg" />
             <p className="homeBlogCardDate">25/04/2025</p>
             <h3 className="homeBlogCardTitle">
               Почесне 1 місце в українських змаганнях
@@ -144,21 +162,22 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="homeContactFormWrapper">
-        <form action="homeContactForm">
-          <input
-            className="homeContactFormInput"
-            type="text"
-            placeholder="+380 - XXX - XX - XX"
-          />
-          <input
-            className="homeContactFormInput"
-            type="text"
-            placeholder="Твоє імя та прізвище"
-          />
-          <button className="homeContactFormBtn"></button>
-        </form>
+      <div className="homeMapsContainer">
+        {/* вставить как будет сеть и скопировать в контакты либо наоборот */}
       </div>
+      <div className="homeFeedbackContainer">
+        <h3 className="feedbackTitle">Відгуки про мою роботу</h3>
+        <div className="feedbackCards">
+          <img src={arrow} alt="arrow" className="feedbackArrow" />
+          <div className="feedbackCard">
+            <img src="" alt="" className="feedbackCardImg" />
+            <img src="" alt="" className="feedbackCardImg" />
+            <img src="" alt="" className="feedbackCardImg" />
+          </div>
+        </div>
+        <img src={arrow} alt="arrow" className="feedbackArrow" />
+      </div>
+      <FullForm />
     </div>
   );
 };
